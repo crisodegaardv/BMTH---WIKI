@@ -1,0 +1,102 @@
+@font-face {
+    src: url(/fonts/Industry-Black.ttf);
+    font-family: industry-black;
+}
+@font-face {
+    src: url(/fonts/Industry-Light.ttf);
+    font-family: industry-light;
+}
+@font-face {
+    src: url(/fonts/Industry-LightItalic.ttf);
+    font-family: industry-light-italic;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: black;
+    color: white;
+    
+}
+
+body h1 {
+    font-family: industry-light;
+}
+
+body p{
+    font-family: industry-light-italic;
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+}
+
+.picture-div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+/*
+.covers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    max-width: 940px;
+}
+*/
+
+.covers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    max-width: 940px;
+}
+
+.cover img {
+    width: 250px;
+    margin-left: 20px;
+}
+
+/* Main Container */
+.main-container {
+    background-image: url(/img/background-3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main-container::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
