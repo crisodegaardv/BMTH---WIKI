@@ -65,8 +65,9 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin: 10px;
     position: relative;
+    
 }
 
 .cover {
@@ -75,11 +76,28 @@ img {
     justify-content: center;
     margin-top: 10px;
     max-width: 940px;
+    background:linear-gradient(to right, #444444, #111111);
+    border-radius: 10px;
+}
+
+/* Transitions */
+.transition-1 {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+}
+
+.transition-1:hover {
+    opacity: 1;
 }
 
 .cover img {
     width: 250px;
     margin-left: 20px;
+}
+
+.cover p {
+    margin-left: 30px;
 }
 
 /* Main Container */
@@ -100,3 +118,4 @@ img {
     left: 0;
     right: 0;
 }
+
